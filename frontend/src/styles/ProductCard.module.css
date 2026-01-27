@@ -1,0 +1,32 @@
+.card_box {
+    width: 500px;
+    height: 360px;
+    border: 3px solid #ababab;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.product_photo {
+    width: 100%;
+    height: 260px;
+}
+
+.product_description {
+    width: 100%;
+    height: 130px;
+    border-top: 3px solid #ababab;
+    border-radius: none;
+}
+
+.product_description p,
+.product_description h4 {
+    padding-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .card_box {
+        width: 93%;
+        margin: 0 10px 0 10px;
+    }
+
+}

@@ -1,0 +1,17 @@
+.product_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    gap: 50px 60px;
+}
+
+.product_cards Link {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .product_cards {
+        margin-left: 0;
+        gap: 20px;
+    }
+}
