@@ -14,7 +14,7 @@ export default function ProductDetails() {
                     <div className={styles.product_text}>
                         <p> super awesome playstation 5 </p>
                         <span> 1999.99zł </span>
-                        <Button width={300} height={70} />
+                        <Button width={300} height={70} placeholder='Dodaj do koszyka' />
                     </div>
                 </div>
             </div>

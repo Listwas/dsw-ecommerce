@@ -11,8 +11,12 @@ export default function NavBar({ page_header }) {
                     </Link>
                 </div>
                 <div className={styles.right}>
-                    <button className={styles.profile}>Profile</button>
-                    <button className={styles.cart}></button>
+                    <Link to='/login'>
+                        <button className={styles.profile}>Profile</button>
+                    </Link>
+                    <Link to="/cart">
+                        <button className={styles.cart}></button>
+                    </Link>
                 </div>
             </nav>
 
