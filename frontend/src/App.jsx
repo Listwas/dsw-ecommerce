@@ -7,7 +7,7 @@ import Homepage from './pages/Homepage'
 import Login from './pages/Login'
 //import PasswordReset from './pages/PasswordReset'
 import ProductDetails from './pages/ProductDetails'
-//import Register from './pages/Register'
+import Register from './pages/Register'
 //import Summary from './pages/Summary'
 //import UserDashboard from './pages/UserDashboard'
 
@@ -21,6 +21,7 @@ function App() {
                 <Route path="/" element={<Homepage />} />
                 <Route path="/product_details" element={<ProductDetails />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
             </Routes>
         </>
     )
