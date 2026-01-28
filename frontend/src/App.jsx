@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 //import AdminDashboard from './pages/AdminDashboard'
-//import AdminLogin from './pages/AdminLogin'
+import AdminLogin from './pages/AdminLogin'
 //import Cart from './pages/Cart'
 //import Delivery from './pages/Delivery'
 import Homepage from './pages/Homepage'
@@ -21,6 +21,7 @@ function App() {
                 <Route path="/" element={<Homepage />} />
                 <Route path="/product_details" element={<ProductDetails />} />
                 <Route path="/login" element={<Login />} />
+                <Route path='/admin' element={<AdminLogin />} />
                 <Route path="/register" element={<Register />} />
                 <Route path='/password_reset' element={<PasswordReset />} />
             </Routes>
