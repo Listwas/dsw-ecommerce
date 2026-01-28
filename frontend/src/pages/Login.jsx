@@ -13,7 +13,10 @@ export default function Login() {
                     <h3> Masz konto? </h3>
                     <InputField width={400} placeholder='E-mail lub login' />
                     <InputField width={400} placeholder='Hasło' />
-                    <Link to="/register"> Nie masz konta? </Link>
+                    <div className={styles.align_fix}>
+                        <Link to='/password_reset'> Nie pamiętam hasła </Link>
+                        <Link to='/register'> Nie masz konta? </Link>
+                    </div>
                     <Button width={400} placeholder='Zaloguj się' />
                 </div>
             </div>

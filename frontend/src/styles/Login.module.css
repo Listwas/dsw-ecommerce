@@ -18,3 +18,9 @@
     padding: 2px;
     text-decoration: underline;
 }
+
+.align_fix {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
