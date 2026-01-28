@@ -10,7 +10,7 @@ export default function Register() {
             <NavBar />
             <div className={styles.center}>
                 <div className={styles.wrapper}>
-                    <h3> Masz konto? </h3>
+                    <h3> Załóż konto </h3>
                     <InputField
                         width={400}
                         placeholder='Login (wymagane)'
