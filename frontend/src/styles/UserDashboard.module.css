@@ -1,0 +1,12 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.wrapper {
+    width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+}

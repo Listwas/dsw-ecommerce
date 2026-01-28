@@ -9,7 +9,7 @@ import PasswordReset from './pages/PasswordReset'
 import ProductDetails from './pages/ProductDetails'
 import Register from './pages/Register'
 //import Summary from './pages/Summary'
-//import UserDashboard from './pages/UserDashboard'
+import UserDashboard from './pages/UserDashboard'
 
 import './App.css'
 
@@ -24,6 +24,7 @@ function App() {
                 <Route path='/admin' element={<AdminLogin />} />
                 <Route path="/register" element={<Register />} />
                 <Route path='/password_reset' element={<PasswordReset />} />
+                <Route path='/user_dashboard' element={<UserDashboard />} />
             </Routes>
         </>
     )

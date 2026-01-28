@@ -5,9 +5,7 @@ export default function Button({ width, height, placeholder }) {
     return (
         <>
             <div>
-                <Link to="/">
-                    <button className={styles.button_style} style={{ width: `${width}px`, height: `${height}px` }}> {placeholder} </button>
-                </Link>
+                <button className={styles.button_style} style={{ width: `${width}px`, height: `${height}px` }}> {placeholder} </button>
             </div>
         </>
 

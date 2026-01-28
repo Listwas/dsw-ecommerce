@@ -17,7 +17,9 @@ export default function Login() {
                         <Link to='/password_reset'> Nie pamiętam hasła </Link>
                         <Link to='/register'> Nie masz konta? </Link>
                     </div>
-                    <Button width={400} placeholder='Zaloguj się' />
+                    <Link to='/user_dashboard'>
+                        <Button width={400} placeholder='Zaloguj się' />
+                    </Link>
                 </div>
             </div>
         </>
