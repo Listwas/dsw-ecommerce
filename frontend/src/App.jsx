@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 //import Delivery from './pages/Delivery'
 import Homepage from './pages/Homepage'
 import Login from './pages/Login'
-//import PasswordReset from './pages/PasswordReset'
+import PasswordReset from './pages/PasswordReset'
 import ProductDetails from './pages/ProductDetails'
 import Register from './pages/Register'
 //import Summary from './pages/Summary'
@@ -22,6 +22,7 @@ function App() {
                 <Route path="/product_details" element={<ProductDetails />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                <Route path='/password_reset' element={<PasswordReset />} />
             </Routes>
         </>
     )
