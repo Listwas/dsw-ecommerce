@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 //import Cart from './pages/Cart'
 //import Delivery from './pages/Delivery'
 import Homepage from './pages/Homepage'
-//import Login from './pages/Login'
+import Login from './pages/Login'
 //import PasswordReset from './pages/PasswordReset'
 import ProductDetails from './pages/ProductDetails'
 //import Register from './pages/Register'
@@ -20,6 +20,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/product_details" element={<ProductDetails />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
         </>
     )
