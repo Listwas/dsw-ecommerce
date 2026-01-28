@@ -1,13 +1,19 @@
-import styles from '../styles/Button.module.css'
-import { Link } from 'react-router-dom'
+import styles from '../styles/Button.module.css';
 
-export default function Button({ width, height, placeholder }) {
+export default function Button({ width, height, placeholder, onClick, type = 'button', disabled = false, className = '' }) {
+    const style = {};
+    if (width) style.width = `${width}px`;
+    if (height) style.height = `${height}px`;
+
     return (
-        <>
-            <div>
-                <button className={styles.button_style} style={{ width: `${width}px`, height: `${height}px` }}> {placeholder} </button>
-            </div>
-        </>
-
-    )
+        <button
+            className={`${styles.button} ${className}`}
+            style={Object.keys(style).length > 0 ? style : undefined}
+            onClick={onClick}
+            type={type}
+            disabled={disabled}
+        >
+            {placeholder}
+        </button>
+    );
 }

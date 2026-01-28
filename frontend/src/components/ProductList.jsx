@@ -1,26 +1,40 @@
-import { useState } from 'react'
-import s from '../styles/ProductList.module.css'
+import { useState } from 'react';
+import styles from '../styles/ProductList.module.css';
 
-export default function ProductList({ image, alt, product_name, product_price, product_quantity, showDropdown = true }) {
-    const [selectedQuantity, setSelectedQuantity] = useState(1)
+export default function ProductList({
+    image,
+    alt,
+    product_name,
+    product_price,
+    product_quantity,
+    showDropdown = true
+}) {
+    const [selectedQuantity, setSelectedQuantity] = useState(1);
+
+    const handleDelete = () => {
+        console.log('Delete product:', product_name);
+    };
 
     return (
-        <div className={s.product_box}>
-            <div className={s.product_photo}>
+        <article className={styles.productCard}>
+            <div className={styles.imageContainer}>
                 <img src={image} alt={alt} />
             </div>
-            <div className={s.product_text}>
+
+            <div className={styles.productName}>
                 <p>{product_name}</p>
             </div>
-            <div className={s.product_price}>
-                <p>{product_price}zł</p>
+
+            <div className={styles.productPrice}>
+                <p>{product_price} zł</p>
             </div>
-            <div className={s.product_quantity}>
+
+            <div className={styles.quantitySection}>
                 {showDropdown ? (
                     <select
                         value={selectedQuantity}
                         onChange={(e) => setSelectedQuantity(e.target.value)}
-                        className={s.quantity_select}
+                        className={styles.quantitySelect}
                     >
                         {[...Array(Math.min(product_quantity, 10))].map((_, i) => (
                             <option key={i + 1} value={i + 1}>
@@ -29,12 +43,13 @@ export default function ProductList({ image, alt, product_name, product_price, p
                         ))}
                     </select>
                 ) : (
-                    <p>{product_quantity} in stock</p>
+                    <p className={styles.stockInfo}>{product_quantity} w magazynie</p>
                 )}
             </div>
-            <div>
-                <button className={s.edit_button}>Usuń</button>
-            </div>
-        </div>
-    )
+
+            <button className={styles.deleteButton} onClick={handleDelete}>
+                Usuń
+            </button>
+        </article>
+    );
 }
