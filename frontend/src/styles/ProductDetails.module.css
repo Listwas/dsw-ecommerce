@@ -1,0 +1,47 @@
+.product_box {
+    display: flex;
+    justify-content: start;
+}
+
+
+.product_photo {
+    width: 40%;
+    height: 550px;
+    margin-left: 400px;
+    background-image: url('../assets/ps5.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text_box {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.product_text span {
+    align-self: end;
+    padding: 20px 0 20px 0;
+    font-weight: 800;
+}
+
+.product_description {
+    margin-left: 400px;
+}
+
+.product_description ul {
+    list-style: none;
+    width: 400px
+}
+
+.product_description li span {
+    color: #717171
+}
