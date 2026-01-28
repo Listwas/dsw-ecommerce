@@ -1,11 +1,14 @@
 import styles from '../styles/NavBar.module.css'
+import { Link } from 'react-router-dom'
 
 export default function NavBar({ page_header }) {
     return (
         <>
             <nav className={styles.center}>
                 <div className={styles.left}>
-                    <h1>dsw-ecommerce</h1>
+                    <Link to="/">
+                        <h1>dsw-ecommerce</h1>
+                    </Link>
                 </div>
                 <div className={styles.right}>
                     <button className={styles.profile}>Profile</button>
