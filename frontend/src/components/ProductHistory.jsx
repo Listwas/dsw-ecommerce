@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom'
 export default function ProductHistory({ image, alt, product_name, user_name, price, address, postal_code, city, telephone }) {
     const location = useLocation()
     const isAdminDashboard = location.pathname === '/admin_dashboard'
+
     return (
         <>
             <div className={styles.product_box}>
@@ -14,14 +15,20 @@ export default function ProductHistory({ image, alt, product_name, user_name, pr
                     <p> {product_name} </p>
                     <p> {price}zł </p>
                 </div>
-                <div className={styles.product_history}>
-                    <ul>
-                        <li> {user_name} </li>
-                        <li> {address} </li>
-                        <li> {postal_code}, {city} </li>
-                        <li> {telephone} </li>
-                    </ul>
-                </div>
+                {(user_name || address || postal_code || city || telephone) && (
+                    <div className={styles.product_history}>
+                        <ul>
+                            {user_name && <li> {user_name} </li>}
+                            {address && <li> {address} </li>}
+                            {(postal_code || city) && (
+                                <li>
+                                    {postal_code}{postal_code && city && ', '}{city}
+                                </li>
+                            )}
+                            {telephone && <li> {telephone} </li>}
+                        </ul>
+                    </div>
+                )}
                 {isAdminDashboard && (
                     <button className={styles.edit_button}> Edytuj </button>
                 )}

@@ -3,6 +3,7 @@ import ProductList from '../components/ProductList'
 import Button from '../components/Button'
 import styles from '../styles/Cart.module.css'
 import img from '../assets/ps5.jpg'
+import { Link } from 'react-router-dom'
 
 export default function Cart() {
     return (
@@ -42,7 +43,9 @@ export default function Cart() {
                         <p> 1999.99zł </p>
                     </div>
                     <div className={styles.button_wrapper}>
-                        <Button width='400' placeholder='Przejdź do dostawy' />
+                        <Link to='/delivery'>
+                            <Button width='400' placeholder='Przejdź do dostawy' />
+                        </Link>
                     </div>
                 </div>
             </div>
