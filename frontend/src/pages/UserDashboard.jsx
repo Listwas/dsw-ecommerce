@@ -2,8 +2,9 @@ import NavBar from '../components/NavBar'
 import InputField from '../components/InputField'
 import Button from '../components/Button'
 import ProductHistory from '../components/ProductHistory'
-import styles from '../styles/UserDashboard.module.css'
+import styles from '../styles/Admin_User_Dashboard.module.css'
 import img from '../assets/ps5.jpg'
+
 export default function UserDashboard() {
     return (
         <>

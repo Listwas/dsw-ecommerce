@@ -31,3 +31,13 @@
 .product_history ul {
     list-style: none;
 }
+
+.edit_button {
+    padding: 8px;
+    margin: 12px;
+    cursor: pointer;
+    background-color: #16AC37;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
