@@ -16,27 +16,31 @@ export default function AdminDashboard() {
                     <ProductList
                         image={img}
                         alt='ps5'
-                        product_name='playstation 5 pro'
-                        product_price='1999.99'
-                        product_quantity='10'
+                        product_name='play station 5 pro'
+                        product_price='1999.9'
+                        product_quantity='50'
+                        showDropdown={false}
                     />
 
                     <ProductList
                         image={img}
                         alt='ps5'
-                        product_name='playstation 5 pro'
-                        product_price='1999.99'
-                        product_quantity='10'
+                        product_name='play station 5 pro'
+                        product_price='1999.9'
+                        product_quantity='50'
+                        showDropdown={false}
                     />
 
                     <ProductList
                         image={img}
                         alt='ps5'
-                        product_name='playstation 5 pro'
-                        product_price='1999.99'
-                        product_quantity='10'
+                        product_name='play station 5 pro'
+                        product_price='1999.9'
+                        product_quantity='50'
+                        showDropdown={false}
                     />
-                    <Button width={400} placeholder='Dodaj Produkt' />
+
+                    <Button width={600} placeholder='Dodaj Produkt' />
                     <h1> Historia zamówień </h1>
                     <ProductHistory
                         image={img}
